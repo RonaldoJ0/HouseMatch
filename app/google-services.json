@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1027585198293",
+    "project_id": "housematch-f5a05",
+    "storage_bucket": "housematch-f5a05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027585198293:android:52e98453cc664f86aa7a5c",
+        "android_client_info": {
+          "package_name": "br.com.pdm.unemat.housematch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027585198293-3fk24nj7pujuomfvhjv69h74gg4jard5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnf1DduF4e45Gm7dd9M1kzb-bdZ3XmwOA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1027585198293-3fk24nj7pujuomfvhjv69h74gg4jard5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

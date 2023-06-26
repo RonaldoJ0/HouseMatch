@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">HouseMatch</string>
+    <string name="logo_description">Logo</string>
+    <string name="welcome_message">Encontre a casa perfeita para você!</string>
+    <string name="start_button_message">Vamos começar</string>
+</resources>
