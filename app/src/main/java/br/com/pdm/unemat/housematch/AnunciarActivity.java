@@ -42,6 +42,7 @@ public class AnunciarActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 onBackPressed();
+                finish();
             }
         });
 

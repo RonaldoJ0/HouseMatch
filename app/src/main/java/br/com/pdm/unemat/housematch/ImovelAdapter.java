@@ -30,9 +30,10 @@ public class ImovelAdapter extends RecyclerView.Adapter<ImovelAdapter.ViewHolder
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Imovel imovel = imoveis.get(position);
         holder.tvTitulo.setText(imovel.getTitulo());
-        holder.tvDescricao.setText(imovel.getDescricao());
+//        holder.tvDescricao.setText(imovel.getDescricao());
 //        holder.tvUsuario.setText(imovel.getNomeProprietario());
         holder.tvCategoria.setText(imovel.getTipo());
+        holder.tvValor.setText("R$ "+ imovel.getPreco().toString());
     }
 
     @Override
@@ -42,8 +43,8 @@ public class ImovelAdapter extends RecyclerView.Adapter<ImovelAdapter.ViewHolder
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         TextView tvTitulo;
-        TextView tvDescricao;
-        TextView tvUsuario;
+//        TextView tvDescricao;
+//        TextView tvUsuario;
         TextView tvValor;
         TextView tvCategoria;
 
@@ -51,7 +52,7 @@ public class ImovelAdapter extends RecyclerView.Adapter<ImovelAdapter.ViewHolder
         public ViewHolder(View itemView) {
             super(itemView);
             tvTitulo = itemView.findViewById(R.id.tvTitulo);
-            tvDescricao = itemView.findViewById(R.id.tvDescricao);
+//            tvDescricao = itemView.findViewById(R.id.tvDescricao);
             tvValor = itemView.findViewById(R.id.tvValor);
             tvCategoria = itemView.findViewById(R.id.tvCategoria);
             btnResp = itemView.findViewById(R.id.btnResposta);

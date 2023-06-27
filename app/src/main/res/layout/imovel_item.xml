@@ -8,31 +8,34 @@
         android:id="@+id/tvTitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/tvDescricao"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:textAppearanceSmall" />
+        android:textAppearance="?android:textAppearanceMedium"
+        android:fontFamily="@font/lato_black"
+        android:textSize="18sp"
+        android:textColor="#252B5C"/>
 
     <TextView
         android:id="@+id/tvValor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:textAppearanceSmall" />
+        android:textAppearance="?android:textAppearanceSmall"
+        android:fontFamily="@font/lato"
+        android:textSize="14sp"
+        android:textColor="#234F68"/>
 
     <TextView
         android:id="@+id/tvCategoria"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:textAppearanceSmall" />
+        android:textAppearance="?android:textAppearanceSmall"
+        android:fontFamily="@font/lato"
+        android:textSize="14sp"
+        android:textColor="#234F68"/>
 
     <Button
         android:id="@+id/btnResposta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Fazer proposta"
-        />
+        android:textColor="@color/white" />
 
 </LinearLayout>

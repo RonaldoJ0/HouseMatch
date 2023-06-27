@@ -45,17 +45,6 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        database = FirebaseFirestore.getInstance();
-
-        recyclerViewImoveis = findViewById(R.id.recyclerViewImoveis);
-        recyclerViewImoveis.setLayoutManager(new LinearLayoutManager(this));
-
-        listaImoveis = obterImoveis();
-
-        imovelAdapter = new ImovelAdapter(listaImoveis);
-        recyclerViewImoveis.setAdapter(imovelAdapter);
-
-
         mAuth = FirebaseAuth.getInstance();
 
         nameTV = findViewById(R.id.NameTextView);
@@ -87,6 +76,20 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(HomeActivity.this, AnunciarActivity.class));
             }
         });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        database = FirebaseFirestore.getInstance();
+
+        recyclerViewImoveis = findViewById(R.id.recyclerViewImoveis);
+        recyclerViewImoveis.setLayoutManager(new LinearLayoutManager(this));
+
+        listaImoveis = obterImoveis();
+
+        imovelAdapter = new ImovelAdapter(listaImoveis);
+        recyclerViewImoveis.setAdapter(imovelAdapter);
     }
 
     private List<Imovel> obterImoveis() {
